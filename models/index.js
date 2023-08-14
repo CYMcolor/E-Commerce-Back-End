@@ -14,10 +14,12 @@ Category.hasMany(Product, {
 });
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
+  //doesn't directly conect so goes through junction table
   through: 'ProductTag'
 });
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
+  //doesn't directly conect so goes through junction table
   through: 'ProductTag'
 });
 
