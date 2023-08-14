@@ -15,12 +15,13 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   //doesn't directly conect so goes through junction table
-  through: 'ProductTag'
+  //refer to table-structure in images folder to understand
+  through: ProductTag
 });
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   //doesn't directly conect so goes through junction table
-  through: 'ProductTag'
+  through: ProductTag
 });
 
 module.exports = {
