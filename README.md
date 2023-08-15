@@ -13,9 +13,11 @@ dafdas
 Download code from the GitHub repository. Have Node.js installed. Link to Node.js downloads: https://nodejs.dev/en/download/. In a terminal input npm init -y. Then in the terminal install express, dotenv, sequilize, and mysql2 by inputting npm install.
 
 ## Usage
-sdfa
+First the user has to enter mysql information in the .env.EXAMPLE file and change it's name to just .env. This will allow the application to connect with the mysql server.
 
-![table structure](./assets/images/table-structure.PNG.png)
+The user will then need to source it's database. In the terminal type in mysql -u -p. Enter password and then type in source db/schema.sql and then exit. To create tables input node seeds.
+
+![table structure](./assets/images/table-structure.PNG)
 
 Video demonstration:
 [![video demonstration](./assets/images/video-static.PNG)]()
